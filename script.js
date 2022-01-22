@@ -1,7 +1,7 @@
 //d05cf8e588819356aed46d471ee283b2 - api key for weather.  fetch("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=d05cf8e588819356aed46d471ee283b2", {mode: 'cors'})
 
 async function getWeatherData(location) {
-    let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=d05cf8e588819356aed46d471ee283b2", {mode: 'cors'})
+    let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=d05cf8e588819356aed46d471ee283b2", {mode: 'cors'})
     let jsonResponse = await response.json();
     return jsonResponse;
 }
